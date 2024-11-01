@@ -7,11 +7,12 @@ number_to_guess = random.randint(1, 100)
 attempts = 0
 max_attempts = 5
 
-
+#loop to check if attempts reached
 while attempts < max_attempts:
     user_number = int(input("Enter your guess: "))
     attempts += 1
 
+    #condition to compare user input with the number guessed
     if user_number == number_to_guess:
         print(f"Congratulations! You guessed the number in {attempts} attempts.")
         break
